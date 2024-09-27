@@ -1,5 +1,8 @@
 function addToBackOfNew(arr, element) {
     // your code here
+    let na =[...arr];
+    na.push(element);
+    return na;
     
 }
 

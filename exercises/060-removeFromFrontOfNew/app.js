@@ -1,6 +1,8 @@
 function removeFromFrontOfNew(arr) {
     // your code here
-    
+    let na = [...arr];
+    na.shift();
+    return na;
 }
 
 let arr = [1, 2, 3];
