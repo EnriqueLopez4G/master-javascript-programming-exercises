@@ -19,6 +19,17 @@ let currentInventory = [
 
 function renderAverageCostPerDesigner(inventory) {
     // your code here
+    let arrayFashion =[];
+    for ( let i of inventory) {
+      console
+      let avg = i.shoes.reduce( (acumulador,shoe)=>  acumulador+shoe.price,0)/i.shoes.length;
+      let obj ={}
+      obj.name =i.name;
+      obj.averagePrice = avg;
+      arrayFashion.push(obj)
+    }
+  
+    return arrayFashion
   
 }
 

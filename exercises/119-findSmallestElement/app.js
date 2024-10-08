@@ -1,5 +1,6 @@
 function findSmallestElement(arr) {
     // your code here
+    return (arr.length<=0 ? 0: (Math.min(...arr)) );
 
 }
 

@@ -21,7 +21,20 @@ function renderInventory(inventory) {
     // your code here
     // hint: before you just dive into coding...
     // it's a good idea to sketch out a skeleton like you've been seeing earlier in this module...
-    
+    let arrayFashion =[];
+    for ( let i of inventory) {
+      for (let s of i.shoes) {
+        let objtmp =[];
+        objtmp.push(i.name);
+        objtmp.push(s.name)
+        objtmp.push(s.price);
+        console.log("OBJ_TMP:",objtmp)
+        arrayFashion.push(objtmp)
+      }
+      
+      
+    }
+    return arrayFashion;
 }
 
 console.log(renderInventory(currentInventory))

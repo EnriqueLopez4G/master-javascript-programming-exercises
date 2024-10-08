@@ -16,8 +16,17 @@ let customerData = {
 function greetCustomer(firstName) {
   let greeting = '';
   // your code here
-	
-  return greeting;
+  if (customerData.hasOwnProperty(firstName)) {
+    if (customerData[firstName].visits===1) {
+      return `Welcome back, ${firstName}! We're glad you liked us the first time!`
+    }
+    if (customerData[firstName].visits > 1) {
+      return `Welcome back, ${firstName}! So glad to see you again!`
+    }
+     
+  }
+  return `Welcome! Is this your first time?`;
+   
 }
 
 console.log(greetCustomer('Joe')); // --> 'Welcome back, Joe! We're glad you liked us the first time!'

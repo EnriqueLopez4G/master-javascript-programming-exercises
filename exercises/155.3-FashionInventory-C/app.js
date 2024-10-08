@@ -19,7 +19,17 @@ let currentInventory = [
 
 function renderInventory(shoeList) {
     // your code here
-    
+    let newList =[];
+    for (let e of shoeList) {
+      for (let s of e.shoes.filter( (e)=> e.name.includes('lace'))) {
+        console.log(s)
+        let objTmp = [];
+        objTmp.nameWords = s.split(' ');
+        console.log(objTmp)
+      
+      }
+    }
+    return newList;
 }
 
 console.log(renderInventory(currentInventory));
